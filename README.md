@@ -6,7 +6,7 @@ BugContext is a lightweight web application that helps QA testers analyze system
 * **AI Log Analysis:** Translates complex server logs and stack traces into clear, human-readable explanations.
 
 
-## 🛠 Tech Stack
+##  Tech Stack
 * **Backend:** Python 3, Flask
 * **AI:** Gemini API (`google-genai`)
 * **Frontend:** HTML5, CSS, JavaScript 
