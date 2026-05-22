@@ -12,7 +12,21 @@
 </head>
 <body>
     <div class="app">
-
+        <header>
+            <h1>BugContext</h1>
+            <p>AI-Powered Log Analysis & Translation</p>
+        </header>
+        <main>
+            <section class="input-section">
+                <textarea id="log-input" placeholder="Paste your logs here..."></textarea>
+                <button id="analyze-btn">Analyze Logs</button>
+            </section>
+            <section class="output-section">
+                <div id="loading" class="hidden">Analyzing...</div>
+                <div id="result" class="result-container"></div>
+            </section>
+        </main>
     </div>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 </html>
