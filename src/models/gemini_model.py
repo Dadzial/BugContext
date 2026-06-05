@@ -33,10 +33,10 @@ class GeminiModel:
             raise ValueError("Logs content cannot be empty.")
 
         prompt = (
-            "You are an expert DevOps engineer and Senior Developer. "
-            "Analyze the following logs in Polish. Identify the root cause of any errors, "
-            "group repeated issues, and provide actionable solutions or steps to debug them.\n\n"
-            f"--- LOGS TO ANALYZE ---\n{raw_logs}\n-----------------------"
+            "Analyze the following logs. For each error, list ONLY: "
+            "1. Błąd, 2. Przyczyna, 3. Możliwa naprawa. "
+            "Do not add any introductions or summaries.\n\n"
+            f"--- LOGS ---\n{raw_logs}\n------------"
         )
 
         return self.generate_response(prompt)

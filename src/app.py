@@ -1,7 +1,7 @@
 import os
 from flask import Flask
-from controllers.main_controller import main_template
-from controllers.gemini_controller import gemini_blueprint
+from src.controllers.main_controller import main_template
+from src.controllers.gemini_controller import gemini_blueprint
 
 BASE_DIR = os.path.dirname(__file__)
 template_dir = os.path.join(BASE_DIR, 'view', 'templates')
